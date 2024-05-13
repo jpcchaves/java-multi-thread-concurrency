@@ -1,11 +1,11 @@
 package br.com.jpcchaves.interrupt;
 
 public class Main {
-  public static void main(String[] args) {
+  public static void main (String[] args) {
     Thread thread = new Thread(new BlockingTask());
+    thread.interrupt();
 
     thread.start();
-    thread.interrupt();
   }
 
   private static class BlockingTask implements Runnable {
