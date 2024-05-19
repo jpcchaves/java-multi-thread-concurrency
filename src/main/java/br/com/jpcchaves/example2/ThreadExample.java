@@ -7,6 +7,10 @@ public class ThreadExample implements Runnable {
     for (int i= 1; i <= 10; i++) {
       System.out.println("I'm a class example that implements runnable and it's the " + i);
 
+      if(i == 7) {
+        return;
+      }
+
       try {
         Thread.sleep(1000);
       } catch (InterruptedException e) {
