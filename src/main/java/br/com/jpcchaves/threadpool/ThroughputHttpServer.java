@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 
 public class ThroughputHttpServer {
   private static final String INPUT_FILE =  Paths.get("C:\\Users\\jpcch\\Documents\\dev\\projects\\backend\\java-multi-thread-concurrency\\course\\resources\\war_and_peace.txt").toAbsolutePath().toString();
-  private static final int NUMBER_OF_THREADS = 1;
+  private static final int NUMBER_OF_THREADS = 4;
 
 
   public static void main(String[] args) throws IOException {
